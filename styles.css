@@ -1,0 +1,77 @@
+#main {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid red;
+    padding: 10px;
+}
+#main .header h2 {
+    margin: 0;
+}
+
+.game {
+    margin: 10px 0 ;
+    padding: 10px;
+}
+
+.grid {
+    width: 450px;
+    border: 3px solid black;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.row {
+    height: 50px;
+    border-bottom: 1px solid gray;
+    box-sizing: border-box !important;
+}
+
+.row:nth-child(3), .grid .row:nth-child(6)
+{
+    border-bottom: 2px solid black;
+}
+
+.cell {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-right: 1px solid gray;
+    vertical-align: top;
+    box-sizing: border-box !important;
+    line-height: 50px;
+}
+
+.cell:nth-child(3), .cell:nth-child(6) {
+    border-right: 2px solid black;
+}
+
+.cell:last-child, .row:last-child {
+    border: 0;
+}
+
+.numpad {
+    width: 120px;
+    font-size: 0;
+    text-align: center;
+    right: 50%;
+    margin-right: 228px;
+    position:absolute;
+    top:0;
+    display: none;
+}
+.numpad button {
+    width: 40px;
+    height: 40px;
+    font-size: 12px;
+}
+
+.container {
+    position: relative;
+}
+
+.cell[preset] {
+    color: darkgrey;
+}
